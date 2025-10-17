@@ -30,6 +30,7 @@ yarn-error.log
 
 # Miscellaneous
 /.angular/cache
+.tailwindcss-cache/
 tailwindcss*.tmp
 .sass-cache/
 /connect.lock
