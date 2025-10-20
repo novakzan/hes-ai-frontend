@@ -1,0 +1,22 @@
+<div class="navbar bg-base-100 border-b border-base-300 text-lg">
+  <div class="navbar-start">
+    <a routerLink="/" class="btn btn-ghost text-3xl text-primary font-extrabold">HES&nbsp;AI</a>
+  </div>
+
+  <div class="navbar-center">
+    <ul class="menu menu-horizontal gap-1 text-lg">
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/concentrators" routerLinkActive="active">Concentrators</a></li>
+    <li><a routerLink="/meters" routerLinkActive="active">Meters</a></li>
+    <li><a routerLink="/import-devices" routerLinkActive="active">Import devices</a></li>
+    <li><a routerLink="/audit-logs" routerLinkActive="active">Audit logs</a></li>
+  </ul>
+  </div>
+
+  <div class="navbar-end gap-2">
+    <select class="select select-bordered select-sm" (change)="onThemeChange($event)">
+      <option value="gridlight" [selected]="currentTheme === 'gridlight'">Light</option>
+      <option value="griddark"  [selected]="currentTheme === 'griddark'">Dark</option>
+    </select>
+  </div>
+</div>
